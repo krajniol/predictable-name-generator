@@ -13,15 +13,15 @@ function checkIfLastCharIsLetter(str: string) {
 }
 
 export function generatePredictableName(customerId: string) {
-  const isFemale = checkIfLastCharIsLetter(customerId);
-  const min = 0;
-  const max = isFemale ? fndLength : mndLength;
+    const isFemale = checkIfLastCharIsLetter(customerId);
+    const max = isFemale ? fndLength : mndLength;
 
-  let x = seedrandom(customerId);
-  let nameIndex = Math.floor(x() * (max - min) + min);
-  let lastNameIndex = Math.floor(x() * (lndLength - min) + min);
+    let x = seedrandom(customerId.substring(0, customerId.length / 2));
+    let y = seedrandom(customerId.substring(customerId.length / 2, customerId.length));
+    let nameIndex = Math.floor(x() * max);
+    let lastNameIndex = Math.floor(y() * lndLength);
 
-  let name = isFemale ? femaleNameDictionary[nameIndex] : maleNameDictionary[nameIndex];
-  let lastName = lastNameDictionary[lastNameIndex];
-  return name + ' ' + lastName;
+    let name = isFemale ? femaleNameDictionary[nameIndex] : maleNameDictionary[nameIndex];
+    let lastName = lastNameDictionary[lastNameIndex];
+    return name + ' ' + lastName;
 }
