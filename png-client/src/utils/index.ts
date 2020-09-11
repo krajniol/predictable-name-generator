@@ -1,0 +1,1 @@
+export { generatePredictableName } from './predictableNameGenerator';
