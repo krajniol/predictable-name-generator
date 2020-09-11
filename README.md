@@ -1,0 +1,1 @@
+# predictable-name-generator
