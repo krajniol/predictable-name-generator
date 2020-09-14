@@ -1,5 +1,8 @@
 # predictable-name-generator
 
+This is a simple PoC, which uses seeded random to generate fake, predictable person names. Seed can be of any string, like id, login etc.
+First and last names based on example from: https://github.com/smashew/NameDatabases/
+
 ## Prerequisites
 
 Install:
