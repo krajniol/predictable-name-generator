@@ -5,32 +5,32 @@
   "author": "Łukasz Krain <krajniol@gmail.com> (http://www.krain.pl)",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@types/jest": "^24.9.1",
-    "@types/node": "^12.12.58",
-    "@types/react": "^16.9.49",
-    "@types/react-dom": "^16.9.8",
-    "@types/seedrandom": "^2.4.28",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/seedrandom": "^3.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
     "seedrandom": "^3.0.5",
-    "typescript": "^3.7.5"
-  },
-  "devDependencies": {
-    "eslint": "^6.6.0"
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "eslint": "./node_modules/.bin/eslint src/** --fix"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
