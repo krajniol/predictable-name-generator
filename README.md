@@ -6,13 +6,13 @@ First and last names based on example from: https://github.com/smashew/NameDatab
 ## Prerequisites
 
 Install:
-* [Node.js 12.18.+ LTS](https://nodejs.org/)
+* [Node.js 14.17+ LTS](https://nodejs.org/)
 
 
 ## Technologies
 
 Application uses:
-* [React](https://reactjs.org/) as frontend
+* [React 17+](https://reactjs.org/) as frontend
 
 ## Installation
 
